@@ -1,8 +1,8 @@
 'strict mode'
 
-const playerSelection = 'paper';
+let playerSelection, computerChoice, promptResult;
 
-let getComputerChoice = function() {
+const getComputerChoice = function() {
     let computerChoice;
     let randnum = Math.floor((Math.random() * (4 - 1)) + 1);
 
@@ -16,8 +16,7 @@ let getComputerChoice = function() {
     
 };
 
-let computerChoice = getComputerChoice();
-console.log(`computer choice: ${computerChoice}`);
+computerChoice = getComputerChoice();
 
 const playRound = function (playerSelection, computerChoice) {
 
@@ -34,5 +33,14 @@ const playRound = function (playerSelection, computerChoice) {
     else if (playerSelection === 'scissors' && computerChoice === 'scissors') return 'Draw';
 };
 
-const gameResult = playRound(`${playerSelection}`, `${computerChoice}`);
-console.log(gameResult);
+const game = function() {
+    for (let i = 0; i < 5; i++) {
+        computerChoice = getComputerChoice();
+        promptResult = prompt('Choose: Rock, Paper or Scissors');
+        playerSelection = promptResult.toLowerCase();
+        console.log(`computer choice: ${computerChoice}`);
+        console.log(playRound(`${playerSelection}`, `${computerChoice}`));
+    }
+}
+
+game();
