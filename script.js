@@ -2,6 +2,7 @@
 
 let playerSelection, computerChoice, promptResult;
 
+    // Function Declarations
 const getComputerChoice = function() {
     let computerChoice;
     let randnum = Math.floor((Math.random() * (4 - 1)) + 1);
@@ -13,10 +14,7 @@ const getComputerChoice = function() {
     } else {
         return 'scissors';
     };
-    
 };
-
-computerChoice = getComputerChoice();
 
 const playRound = function (playerSelection, computerChoice) {
 
@@ -43,4 +41,14 @@ const game = function() {
     }
 }
 
-game();
+computerChoice = getComputerChoice();
+console.log(`COMPUTER CHOICE: ${computerChoice}`);
+// Event for ROCK button
+const rockBtn = document.querySelector('.rockButton');
+rockBtn.addEventListener('click', ()  => console.log(playRound('rock', `${computerChoice}`)));
+// Event for PAPER button
+const paperBtn = document.querySelector('.paperButton');
+paperBtn.addEventListener('click', () => console.log(playRound('paper', `${computerChoice}`)));
+//Event for SCISSORS button
+const scissorsBtn = document.querySelector('.scissorsButton');
+scissorsBtn.addEventListener('click', () => console.log(playRound('scissors', `${computerChoice}`)));
