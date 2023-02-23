@@ -5,12 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <button class="rockButton"> Rock </button>
-    <button class="paperButton"> Paper </button>
-    <button class="scissorsButton"> Scissors </button>
-    
+    <div class="container">
+
+        <div class="header">
+            <h1 class="title"> ROCK PAPER SCISSORS </h1>
+        </div>
+
+        <div class="mainContent">
+
+            <div class="playerResult">
+                <p> Player Result: </p>
+            </div>
+
+            <div class="button">
+
+                <button class="rockButton"> <img src="./pictures/rock.jpeg"> </button>
+                <button class="paperButton"> <img src="./pictures/paper.jpeg"> </button>
+                <button class="scissorsButton"> <img src="./pictures/scissors.jpeg"> </button>
+            </div>
+            
+            <div class="computerResult">
+                <p> Computer Result: </p>
+            </div>
+        </div>
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
