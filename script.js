@@ -43,12 +43,11 @@ const game = function() {
 
 computerChoice = getComputerChoice();
 console.log(`COMPUTER CHOICE: ${computerChoice}`);
-// Event for ROCK button
+
+// Events for each button
 const rockBtn = document.querySelector('.rockButton');
 rockBtn.addEventListener('click', ()  => console.log(playRound('rock', `${computerChoice}`)));
-// Event for PAPER button
 const paperBtn = document.querySelector('.paperButton');
 paperBtn.addEventListener('click', () => console.log(playRound('paper', `${computerChoice}`)));
-//Event for SCISSORS button
 const scissorsBtn = document.querySelector('.scissorsButton');
 scissorsBtn.addEventListener('click', () => console.log(playRound('scissors', `${computerChoice}`)));
