@@ -55,4 +55,12 @@
     border: solid 1px red;
     height: 90vh;
     width: 30vw;
+    padding: 5px;
+}
+.current-score {
+    font-size: 15rem;
+}
+
+.win-condition {
+    font-size: 20px;
 }
