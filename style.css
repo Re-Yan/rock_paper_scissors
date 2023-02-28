@@ -1,66 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  padding: 0px;
+}
+/*  #f6c453  #fefbe9  #f0a04b   #183a1d   #e1eedd */
 .header {
-    align-items: center;
-    text-align: center;
-    background-color: bisque;
-    height: 10vh;
-    width: 100%;
+  align-items: center;
+  text-align: center;
+  background-color: #e9f79e;
+  height: 10vh;
+  width: 100%;
+  color: #e69617;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: aqua;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #e1ffcc; */
+  background-color: #c9db8c;
+  height: 100%;
+  width: 100%;
+  min-width: 0;
 }
 
 .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-width: 0;
 }
 
 .mainContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #39395f;
 }
 
 .display {
-    text-align: center;
+  text-align: center;
+}
+
+#computerPick {
+  margin-left: 35px;
 }
 
 .selection-screen {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50vw;
 }
 
 .buttonContainer {
-    border: solid 1px green;
-    display: flex;
-    align-items: flex-end;
-    padding: 20px;
-    width: 40vw;
-    justify-content: space-evenly;
-
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  width: 50vw;
+  justify-content: space-evenly;
 }
 
 .button {
-     margin-bottom: 15vh; 
+  margin-bottom: 10vh;
 }
 
 .result {
-    text-align: center;
-    border: solid 1px red;
-    height: 90vh;
-    width: 30vw;
-    padding: 5px;
+  text-align: center;
+  height: 90vh;
+  width: auto;
+  padding: 5px;
+  background-color: #e1eedd;
+  min-width: 0;
+  color: #e69617;
 }
-.current-score {
-    font-size: 15rem;
+#right {
+  border-radius: 0px 20px 20px 0px;
+}
+
+#left {
+  border-radius: 20px 0px 0px 20px;
+}
+
+#current-score-0,
+#current-score-1 {
+  font-size: 10rem;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 400px;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+  background-color: antiquewhite;
+  padding: 30px 50px;
+  box-shadow: 0 3rem 5rem black;
 }
 
 .win-condition {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
 }
